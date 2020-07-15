@@ -19,7 +19,7 @@ class Permission extends Extension
 //    protected $lang = __DIR__.'/../resources/lang';
 
     protected $menu = [
-        'title' => '权限管理',
+        'title' => '权限导入',
         'path'  => 'permission-plus',
         'icon'  => 'feather icon-lock',
     ];

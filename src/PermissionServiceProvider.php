@@ -17,17 +17,15 @@ class PermissionServiceProvider extends ServiceProvider
             $this->loadViewsFrom($views, Permission::NAME);
         }
 
-        if ($lang = $extension->lang()) {
-            $this->loadTranslationsFrom($lang, Permission::NAME);
-        }
+//        if ($lang = $extension->lang()) {
+//            $this->loadTranslationsFrom($lang, Permission::NAME);
+//        }
+//
+//        if ($migrations = $extension->migrations()) {
+//            $this->loadMigrationsFrom($migrations);
+//        }
 
-        if ($migrations = $extension->migrations()) {
-            $this->loadMigrationsFrom($migrations);
-        }
-
-        $this->app->booted(function () use ($extension) {
-            $extension->routes(__DIR__.'/../routes/web.php');
-        });
+        $extension->routes(__DIR__.'/../routes/web.php');
     }
 
     /**
