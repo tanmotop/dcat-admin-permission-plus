@@ -1,0 +1,27 @@
+{
+    "name": "tanmo/permission-plus",
+    "description": "dcat-admin extension permission-plus",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/tanmotop/permission-plus",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tanmo",
+            "email": "410536770@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "*",
+        "doctrine/annotations": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tanmo\\Dcat\\Permission\\": "src/"
+        },
+         "files": [
+            "src/bootstrap.php"
+        ]
+    }
+}
