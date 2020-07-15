@@ -23,5 +23,12 @@
          "files": [
             "src/bootstrap.php"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tanmo\\Dcat\\Permission\\PermissionServiceProvider"
+            ]
+        }
     }
 }
